@@ -59,7 +59,6 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.white)
                     .frame(width: 150.0, height: 50)
-                    //.padding(.bottom, 60)
                     .background(Color.blue)
                 .clipShape(Capsule())
                 
