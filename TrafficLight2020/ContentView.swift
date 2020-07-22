@@ -8,28 +8,31 @@
 
 import SwiftUI
 
+//поработать над дизайном
+
 struct ContentView: View {
     
+    let lightIsOnBrightness = 0.0
+    let lightIsOffBrightness = 0.9
     @State var redLightBrightness = 0.9
     @State var yellowLightBrightness = 0.9
     @State var greenLighBrightness = 0.9
     @State var lightIsOff = true
-    @State var currentLight = ""
-    @State var titleOfButton = "Start"
+    @State var titleOfButton = "START"
     
     func changeColor(){
-        if redLightBrightness == 0.0 {
-            redLightBrightness = 0.9
-            yellowLightBrightness = 0.0
-        } else if yellowLightBrightness == 0.0 {
-            yellowLightBrightness = 0.9
-            greenLighBrightness = 0.0
-        } else if greenLighBrightness == 0.0 {
-            greenLighBrightness = 0.9
-            redLightBrightness = 0.0
+        if redLightBrightness == lightIsOnBrightness {
+            redLightBrightness = lightIsOffBrightness
+            yellowLightBrightness = lightIsOnBrightness
+        } else if yellowLightBrightness == lightIsOnBrightness {
+            yellowLightBrightness = lightIsOffBrightness
+            greenLighBrightness = lightIsOnBrightness
+        } else if greenLighBrightness == lightIsOnBrightness {
+            greenLighBrightness = lightIsOffBrightness
+            redLightBrightness = lightIsOnBrightness
         } else {
-            redLightBrightness = 0.0
-            titleOfButton = "Next"
+            redLightBrightness = lightIsOnBrightness
+            titleOfButton = "NEXT"
         }
         
     }
@@ -51,14 +54,19 @@ struct ContentView: View {
             }
             Spacer()
             Button(action: {self.changeColor()}) {
+                
                 Text(titleOfButton)
-                    .padding(.bottom, 60)
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .frame(width: 150.0, height: 50)
+                    //.padding(.bottom, 60)
+                    .background(Color.blue)
+                .clipShape(Capsule())
+                
             }
         }
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

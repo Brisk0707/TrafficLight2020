@@ -13,7 +13,6 @@
 		DACFAE0A24C71C81002A3E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACFAE0924C71C81002A3E9F /* Assets.xcassets */; };
 		DACFAE0D24C71C81002A3E9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACFAE0C24C71C81002A3E9F /* Preview Assets.xcassets */; };
 		DACFAE1024C71C81002A3E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFAE0E24C71C81002A3E9F /* LaunchScreen.storyboard */; };
-		DACFAE1824C739B7002A3E9F /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFAE1724C739B7002A3E9F /* Lights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		DACFAE0C24C71C81002A3E9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DACFAE0F24C71C81002A3E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACFAE1124C71C81002A3E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DACFAE1724C739B7002A3E9F /* Lights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				DACFAE0324C71C7F002A3E9F /* AppDelegate.swift */,
 				DACFAE0524C71C7F002A3E9F /* SceneDelegate.swift */,
 				DACFAE0724C71C7F002A3E9F /* ContentView.swift */,
-				DACFAE1724C739B7002A3E9F /* Lights.swift */,
 				DACFAE0924C71C81002A3E9F /* Assets.xcassets */,
 				DACFAE0E24C71C81002A3E9F /* LaunchScreen.storyboard */,
 				DACFAE1124C71C81002A3E9F /* Info.plist */,
@@ -151,7 +148,6 @@
 			files = (
 				DACFAE0424C71C7F002A3E9F /* AppDelegate.swift in Sources */,
 				DACFAE0624C71C7F002A3E9F /* SceneDelegate.swift in Sources */,
-				DACFAE1824C739B7002A3E9F /* Lights.swift in Sources */,
 				DACFAE0824C71C7F002A3E9F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
